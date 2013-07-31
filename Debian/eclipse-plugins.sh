@@ -2,7 +2,7 @@
 eclipseUpdateSite="http://download.eclipse.org/releases/kepler/"
 
 updateSites=(
-$eclipseUpdateSite 
+$eclipseUpdateSite #Eclipse
 'https://sourceforge.net/projects/eclipsejsonedit/files/update' #JSON Editor
 'http://moreunit.sourceforge.net/update-site/' #MoreUnit
 'http://update.eclemma.org/' #EclEmma Code Coverage
@@ -10,11 +10,11 @@ $eclipseUpdateSite
 )
 
 plugins=(
-'jsonedit-feature.feature.group' 
-'org.eclipse.mylyn_feature.feature.group' 
-'org.moreunit.feature.group' 
-'com.mountainminds.eclemma.feature.feature.group'
-'org.springsource.ide.eclipse.gradle.feature.feature.group'
+'jsonedit-feature.feature.group' #JSON Editor
+'org.eclipse.mylyn_feature.feature.group' #Mylyn
+'org.moreunit.feature.group' #MoreUnit
+'com.mountainminds.eclemma.feature.feature.group' #EclEmma Code Coverage
+'org.springsource.ide.eclipse.gradle.feature.feature.group' #GRADLE integration
 )
 
 updateSitesArray=$(printf ",%s" "${updateSites[@]}")
