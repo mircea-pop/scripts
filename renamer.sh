@@ -31,8 +31,8 @@ for i in $dirs
         echo "File to be renamed found: $f. I will rename it..." 
         mv $f $filename.$extension
       else
-       echo "found unuseful file $f which I will delete it";
-       rm -rf $f;
+       echo "found unuseful file $f which could be deleted";
+       #rm -rf $f;
     fi
    done;
   cd ..
